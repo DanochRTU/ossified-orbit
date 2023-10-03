@@ -1,0 +1,15 @@
+---
+import MainLayout from "/home/danoch/ossified-orbit/src/layouts/MainLayout.astro"
+
+const reports = ["OSI","Discussion class 4", "Tools"]
+---
+
+<MainLayout title="Reports">
+    <ul class="w-48 text-sm font-medium rounded-lg border bg-gray-700 border-gray-600 text-white">
+        {reports.map((reporte) => 
+        <li class='py-2 px-4 w-full rounded-t-lg border-b border-gray-600'>
+        {reporte}
+        </li>
+        )}
+    </ul>
+</MainLayout>
